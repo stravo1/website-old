@@ -19,7 +19,7 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a target={"_blank"} href="https://github.com/stravo1" className={styles.card}>
+          <a href="https://github.com/stravo1" className={styles.card}>
             <h2>Github &rarr;</h2>
             <p>Checkout my Github and take a look at my projects!</p>
           </a>
