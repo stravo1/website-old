@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 
-const TextScramble = () => {
+const TextScramble = ({ phrases, name }) => {
   // ——————————————————————————————————————————————————
   // TextScramble
   // ——————————————————————————————————————————————————
@@ -66,26 +66,14 @@ const TextScramble = () => {
   // Example
   // ——————————————————————————————————————————————————
 
-  const phrases = [
-    "vuejs",
-    "react",
-    "flutter",
-    "nextjs",
-    "tail wind",
-    "type script",
-    "rust",
-    "fire base",
-    "gcp",
-    "aws",
-  ];
   useEffect(() => {
-    const el = document.querySelector(".text");
+    const el = document.querySelector(`.${name}`);
     const fx = new TextScramble(el);
 
     let counter = 0;
     const next = () => {
       fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 1500);
+        setTimeout(next, 1250);
       });
       counter = (counter + 1) % phrases.length;
     };
@@ -94,9 +82,9 @@ const TextScramble = () => {
   });
 
   return (
-    <div className="container">
-      <div className="text"></div>
-    </div>
+    <span className="container">
+      <span className={name}></span>
+    </span>
   );
 };
 

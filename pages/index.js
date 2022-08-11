@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout>
       <div
-      id="scroll"
+        id="scroll"
         className="h-screen overflow-scroll"
         style={{ scrollSnapType: "y mandatory" }}
       >
@@ -21,12 +21,28 @@ export default function Home() {
             from india.
             <br />
             <br />
-            {"< welcome />"}
+            {"< "}
+            <TextScramble phrases={["welcome", "scroll gently"]} name={"one"} />
+            {" />"}
           </Text>
         </Section>
         <Section>
           <Pixelated>
-            <TextScramble />
+            <TextScramble
+              phrases={[
+                "vuejs",
+                "react",
+                "flutter",
+                "nextjs",
+                "tail wind",
+                "type script",
+                "rust",
+                "fire base",
+                "gcp",
+                "aws",
+              ]}
+              name={"two"}
+            />
           </Pixelated>
           <Text>
             proficient in web-dev.
@@ -48,7 +64,13 @@ export default function Home() {
         <Section>
           <Pixelated>
             <Link href={"/contact"}>
-              <a className="hover:text-red-500 transition-all">say hello!</a>
+              <a className="hover:text-red-500 transition-all">
+                say{" "}
+                <TextScramble
+                  phrases={["hello!", "hola!", "privet", "ciao!"]}
+                  name={"three"}
+                />
+              </a>
             </Link>
           </Pixelated>
           <Text>
