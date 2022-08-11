@@ -64,13 +64,7 @@ export default function Home() {
         <Section>
           <Pixelated>
             <Link href={"/contact"}>
-              <a className="hover:text-red-500 transition-all">
-                say{" "}
-                <TextScramble
-                  phrases={["hello!", "hola!", "privet", "ciao!"]}
-                  name={"three"}
-                />
-              </a>
+              <a className="hover:text-red-500 transition-all">say hello!</a>
             </Link>
           </Pixelated>
           <Text>
@@ -85,7 +79,12 @@ export default function Home() {
             and get in touch!
             <br />
             <br />
-            {"< html />"}
+            {"< "}
+            <TextScramble
+              phrases={["thank you", "visit again"]}
+              name={"three"}
+            />
+            {" />"}
           </Text>
         </Section>
       </div>
