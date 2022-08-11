@@ -6,7 +6,7 @@ const Layout = ({ children, customMeta }) => {
     title: "stravo1 - another web developer",
     description: "checkout my personal website, cheers!",
     type: "website",
-    image: "/images/identicon.svg",
+    image: "/images/og_img.png",
     date: "",
     url: "https://stravo.live/",
     ...customMeta,
@@ -59,8 +59,7 @@ const Layout = ({ children, customMeta }) => {
       </Head>
       <Header />
       <main
-        className="relative top-20 font-mono p-8 lg:p-12"
-        style={{ height: "calc(100vh * 2);" }}
+        className="font-mono p-8 lg:p-12"
       >
         {children}
       </main>
