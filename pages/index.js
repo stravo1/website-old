@@ -11,7 +11,7 @@ export default function Home() {
       <Section>
         <Pixelated>hello world!</Pixelated>
         <Text>
-          i'm sayantan, <br />
+          i{"'"}m sayantan, <br />
           another web developer <br />
           from india.
           <br />
