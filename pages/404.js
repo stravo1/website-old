@@ -24,7 +24,7 @@ const PageNotFound = () => {
         <br />
         <br />
         <div className="font-cursive text-2xl text-center py-12">oops!  <TextScramble
-              phrases={["page", "mlk3ahm"]}
+              phrases={["page", "mlk3ah"]}
               name={"error"}
             /> not found :{"("}</div>
       </div>
