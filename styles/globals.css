@@ -1,16 +1,31 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Press+Start+2P&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+}
+#menu {
+  height: 0px;
+  transition: all 250ms ease-in-out;
+}
+@media (min-width: 768px) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
+}
+.menuItem {
+  display: none;
+  transition: display 150ms ease-in-out;
+}
+.delay_125 {
+  animation-delay: 125ms;
+}
+.delay_225 {
+  animation-delay: 225ms;
+}
+.delay_175 {
+  animation-delay: 175ms;
 }
