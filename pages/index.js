@@ -71,7 +71,7 @@ export default function Home() {
             view my resume{" "}
             <a
               className="underline hover:text-red-500 transition-all"
-              href="https://drive.google.com/uc?export=download&id=12cECmNNsjan0-wHYLIA0jwTsX7KEApJ5"
+              href="https://drive.google.com/uc?export=download&id=1KVd90yD-P-9q9FaUv9STBpEJ6E-BsWzG"
             >
               here
             </a>{" "}
