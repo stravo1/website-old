@@ -8,7 +8,7 @@ const PageNotFound = () => {
   return (
     <Layout
       customMeta={{
-        title: "404 - Page Not Found | Skill Academia",
+        title: "404 - Page Not Found",
         description: "404 error! Page not found.",
       }}
     >
@@ -24,7 +24,7 @@ const PageNotFound = () => {
         <br />
         <br />
         <div className="font-cursive text-2xl text-center py-12">oops!  <TextScramble
-              phrases={["page", "^__^"]}
+              phrases={["page", "mlk3ah"]}
               name={"error"}
             /> not found :{"("}</div>
       </div>
