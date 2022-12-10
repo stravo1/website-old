@@ -4,8 +4,14 @@ import Section from "../components/home/Section";
 import Text from "../components/home/Text";
 import TextScramble from "../components/home/TextScramble";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    console.log("hello! visit https://github.com/stravo1/website for the source code. cheers :)");
+    setLoaded(true);
+  }, []);
   return (
     <Layout>
       <div
@@ -22,13 +28,13 @@ export default function Home() {
             <br />
             <br />
             {"< "}
-            <TextScramble phrases={["welcome", "scroll gently"]} name={"one"} />
+            {loaded ? <TextScramble phrases={["welcome", "scroll gently"]} name={"one"} /> : "welcome"}
             {" />"}
           </Text>
         </Section>
         <Section>
           <Pixelated>
-            <TextScramble
+            {loaded ? <TextScramble
               phrases={[
                 "vuejs",
                 "react",
@@ -42,7 +48,7 @@ export default function Home() {
                 "aws",
               ]}
               name={"two"}
-            />
+            /> : "skills"}
           </Pixelated>
           <Text>
             proficient in web-dev.
